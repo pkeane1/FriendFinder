@@ -150,5 +150,38 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script>
+
+
+$("#submit").on("click",function(event){
+    event.preventDefault();
+    console.log("ive been clicked")
+
+
+    if($(".form-control").val() === "") {
+        alert("Please enter your name and photo")
+    }
+
+    if($(".chosen-select").val() === "") {
+        alert("Please enter your name and photo")
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
 </body>
 </html>
