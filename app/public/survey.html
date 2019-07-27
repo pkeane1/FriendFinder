@@ -29,110 +29,110 @@
     <h4>Do you like bananas?</h4>
          <select data-placeholder="" class="chosen-select" id="q1">
             <option value="select">Select An Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1">1 </option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="5">5</option>
         </select>
 
     <h3 class="mt-4"><strong>Question 2</strong></h3>
     <h4>Do you like the color blue?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 3</strong></h3>
     <h4>Do you wish you could never work another day in your life?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 4</strong></h3>
     <h4>Do you enjoy exercise?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1 </option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 5</strong></h3>
     <h4>Do you enjoy going out on the weekends?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3><strong>Question 6</strong></h3>
     <h4>Do you enjoying coding?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 7</strong></h3>
     <h4>Is your favorite language javascript?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 8</strong></h3>
     <h4>Is summer your favorite season?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 9</strong></h3>
     <h4>Do you enjoy solving complex problems</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
 
     <h3 class="mt-4"><strong>Question 10</strong></h3>
     <h4>Do you like to dance?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value="select">Select An Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="5">5</option>
     </select>
   <br>
   <br>
@@ -158,7 +158,7 @@
             </div>
             <div class="modal-body">
               <h2 id="matchName"></h2>
-              <img id="matchImg" src ="" alt="" height="350" width="300">
+              <img id="matchPic" src ="" alt="" height="350" width="300">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
@@ -210,7 +210,7 @@ function completeForm(){
 }
 		// If all required fields are filled
 		if (completeForm() === true) {
-    var userData = {
+    var newEntry = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             score: [
@@ -229,17 +229,18 @@ function completeForm(){
         }
         var URL = window.location.origin;
 
-        $.post(URL + "/api/friends",userData,function(data){
+        $.post(URL + "/api/friends",newEntry,function(data){
+            console.log(data)
             $("#matchName").text(data.name);
             $("#matchPic").attr('src', data.picture);
             $("#resultsModal").modal('toggle');
-            console.log(data.name);
+            // console.log(data);
             $('#name').val('');
             $('#picture').val('');
             $('.chosen-select').val('');
         });
         } 
-        else alert('Please complete all fields');
+        else alert("Please complete all fields");
 });
 
 
